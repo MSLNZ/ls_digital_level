@@ -16,7 +16,7 @@ This looks promissing
 
 https://superuser.com/questions/1237268/making-a-bluetooth-device-recognized-as-a-com-port
 
-I managed to get my headphones looking  like they're on COM3 both in pythn and in 
+I managed to get my headphones looking  like they're on COM3 both in python and in 
 
 Control Panel > Bluetooth Settings > COM Ports Add
 ```
@@ -30,4 +30,8 @@ Control Panel > Bluetooth Settings > COM Ports Add
 ```
 
 Next try with LS15
+
+{2020-03-19}
+
+I have this working on CIL00029 Hp Elitebook laptop running win10. I have attempted to update the eradme to describe the process, should add screenshots.
 

@@ -10,7 +10,7 @@ Requires Python (3.6, 3.7 work, others might) install with dependencies
 *  queue 
 
 
-Works on win 7 Lenovo thinkpad
+Works on win 7 Lenovo thinkpad, also got working on win 10 on HP Elitebook
 
 ## Initial Pairing
 
@@ -21,17 +21,23 @@ again.
 
 1. Turn the laptop and LS15 on. Do the compass calibration on the LS15 if asked. This can be skipped by using the enter key on the LS15, but its worth doing when actually on site to ensure the  angle coordinates are correct.
 
-2. Click on the Bluetooth icon on the laptop status bar and check that bluetooth is on.
+2. Click on the Bluetooth icon on the laptop status bar and check that bluetooth is on. 
+   (WIN10: Bluetooth Icon -> Open Settings -> On)
 
 3. Click on the Bluetooth icon on the laptop status bar and select Add a device
+   (WIN10: Bluetooth Icon -> Open Settings -> +) 
 
 4. The Level should turn up as LS701020 where 701020 is the serial number of the LS15.
 
 5. Double-click on the LS701020 icon on the laptop to pair with the LS15. This will involve entering a pin (0000) on the laptop and confirming the connection on the LS15 instrument panel.
 
+(WIN10: Its should show paired underneath the LS_701020 icon on the laptop, there will still be a excalamtion mark on the bluetooth icon on the screen)
+
 6. Right-click on the icon in the Bluetooth devices window, Properties -> Services to find which COM port the level has been assigned to.
+(WIN10: WIN10: Bluetooth Icon -> Open Settings -> Devices and printers (very bottom of window) Make sure   "Serial port (SPP) 'BT_Serial' is checked, if errors are given when "Apply" is checked make sure LS15 Reader software is not running)
 
 ## 
+
 
 ## Running LS15 Reader software
 
