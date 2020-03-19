@@ -2,10 +2,17 @@
 
 Read a Leica LS15 digital level via bluetooth and enter in an excel spreadsheet
 
+Requires Python (3.6, 3.7 work, others might) install with dependencies
+*  pyserial
+*  pywin32
+*  tkinter
+*  threading
+*  queue 
 
+
+Works on win 7 Lenovo thinkpad
 
 ## Initial Pairing
-
 
 The LS15 has to
 be paired on Bluetooth with the Laptop. This sets up which COM port the LS15
@@ -56,8 +63,6 @@ Timestamp, height, distance, X, Y, Z
 
 in the file LS15_YYYYMMDD_HHMM.csv (in the desktop folder of the laptop)
 
-
-
 ## Settings on the LS15
 
 The Level should have the following settings, these are persistent when the level is turned off and on.
@@ -69,7 +74,6 @@ The Level should have the following settings, these are persistent when the leve
 * Data -> Output -> GSI16
 
 * Work -> Trigger Key -> AF+DIST+REC
-  
 
 If required 
 
