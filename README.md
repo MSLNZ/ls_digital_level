@@ -3,12 +3,11 @@
 Read a Leica LS15 digital level via bluetooth and enter in an excel spreadsheet
 
 Requires Python (3.6, 3.7 work, others might) install with dependencies
-*  pyserial
-*  pywin32
-*  tkinter
-*  threading
-*  queue 
-
+*  pyserial (pip install pyserial)
+*  pywin32 (pip install pywin32)
+*  tkinter (pip install tk)
+*  threading (pip install threaded)
+*  queue  (pip install queuelib)
 
 Works on win 7 Lenovo thinkpad, also got working on win 10 on HP Elitebook
 
