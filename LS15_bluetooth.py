@@ -87,14 +87,12 @@ class App(tk.Tk):
 
         # logging file names
         self.log_name = os.path.join(
-            os.path.join(os.environ["USERPROFILE"]),
-            "Desktop",
+            os.path.join(os.environ["PUBLIC"]),
             "LS15_" + "{:%Y%m%d_%H%M}".format(datetime.datetime.now()) + ".log",
         )
 
         self.csv_name = os.path.join(
-            os.path.join(os.environ["USERPROFILE"]),
-            "Desktop",
+            os.path.join(os.environ["PUBLIC"]),
             "LS15_" + "{:%Y%m%d_%H%M}".format(datetime.datetime.now()) + ".csv",
         )
 
