@@ -62,11 +62,11 @@ again.
    software window and the active cell in Excel.
 
 8. All strings received from the LS15 are recorded in a file LS15_YYYYMMDD_HHSS.log
-   (on the desktop) and all valid measurements are stored in csv format
+   (in the public user folder `C:\Users\Public`) and all valid measurements are stored in csv format
 
 Timestamp, height, distance, X, Y, Z 
 
-in the file LS15_YYYYMMDD_HHMM.csv (in the desktop folder of the laptop)
+in the file LS15_YYYYMMDD_HHMM.csv (in the public user folder `C:\Users\Public`)
 
 ## Settings on the LS15
 
