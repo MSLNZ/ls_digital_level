@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ls_digital_level"
+version = "0.1.0"
+description = "Read a Leica LS15 digital level via bluetooth and enter in an excel spreadsheet"
+authors = ["elfnor <elfnor@users.noreply.github.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyserial = "pywin32"
+pywin32 = "^304"
+tk = "^0.1.0"
+queuelib = "^1.6.2"
+bleak = "^0.14.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

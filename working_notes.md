@@ -35,3 +35,6 @@ Next try with LS15
 
 I have this working on CIL00029 Hp Elitebook laptop running win10. I have attempted to update the eradme to describe the process, should add screenshots.
 
+
+info on win32com.client excel connection
+https://pbpython.com/windows-com.html

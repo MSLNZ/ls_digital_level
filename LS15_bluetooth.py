@@ -28,8 +28,8 @@
 # [x] test bluetooth by reading connection and indicating its working
 # [x] requires to be run as adminstrator can I bypass this for a simple bat file?
 
-# [ ] not finding com ports on HP elitebook, win 10 problem?
-#      same problem if
+# [x] replace "across" with "up" option
+#
 
 from math import pi, cos, sin
 import os
@@ -72,7 +72,10 @@ class App(tk.Tk):
         self.serial_port.baudrate = 115200
         # get list of serial ports
         ports = serial.tools.list_ports.comports()
+        for port, desc, hwid in sorted(ports):
+            print("{}: {} [{}]".format(port, desc, hwid))
         self.port_ids = sorted([port[0] for port in ports])
+
         if "COM4" in self.port_ids:
             self.serial_port.port = "COM4"
         else:
@@ -90,7 +93,6 @@ class App(tk.Tk):
             os.path.join(os.environ["PUBLIC"]),
             "LS15_" + "{:%Y%m%d_%H%M}".format(datetime.datetime.now()) + ".log",
         )
-
         self.csv_name = os.path.join(
             os.path.join(os.environ["PUBLIC"]),
             "LS15_" + "{:%Y%m%d_%H%M}".format(datetime.datetime.now()) + ".csv",
@@ -149,15 +151,15 @@ class App(tk.Tk):
         self.Z = self.height
 
     def send_to_excel(self):
-        if self.move_excel.get() == "across":
-            offset_A = (1, 2)
-            offset_B = (2, 1)
-            offset_C = (3, 1)
-            offset_D = (4, 1)
-            offset_E = (5, 1)
-            offset_F = (6, 1)
-            offset_G = (7, 1)
-        else:
+        if self.move_excel.get() == "up":
+            offset_A = (0, 1)
+            offset_B = (1, 2)
+            offset_C = (1, 3)
+            offset_D = (1, 4)
+            offset_E = (1, 5)
+            offset_F = (1, 6)
+            offset_G = (1, 7)
+        else:  # down
             offset_A = (2, 1)
             offset_B = (1, 2)
             offset_C = (1, 3)
@@ -248,6 +250,7 @@ class App(tk.Tk):
 
     def open_serial(self):
         print("opening port, expect bluetooth window on PC")
+
         self.serial_port.port = self.port_id.get()
         self.serial_port.open()
         # check connection by requesting LS15 id
@@ -313,9 +316,9 @@ class App(tk.Tk):
         self.label_e2 = tk.Label(self, text="Move Active Cell")
         self.label_e2.grid(row=25, column=1, sticky="W")
 
-        move_options = ["across", "down"]
+        move_options = ["up", "down"]
         self.move_excel = tk.StringVar(self)
-        self.move_excel.set("across")
+        self.move_excel.set("down")
         self.move_excel_drop = tk.OptionMenu(self, self.move_excel, *move_options)
         self.move_excel_drop.grid(row=30, column=1, stick="W")
 
