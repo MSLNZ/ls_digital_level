@@ -18,12 +18,17 @@ Install from scratch  - this is minimal method - better practice would be to use
 - in command prompt 
 
 ```
-cd C:\Users\Public\ls_digital_level-*
-conda install --file requirements.txt
+cd C:\Users\Public\ls_digital_level-0.1.1
+conda install pip
+pip install -r requirements.txt
 ```
 
-create and run batch file...
-
+create and run batch file with following lines
+```
+@echo on
+call %USERPROFILE%\Miniconda3\Scripts\activate.bat
+%USERPROFILE%\Miniconda3\python.exe "C:\Users\Public\ls_digital_level-0.1.1\LS15_bluetooth.py
+```
 
 
 
