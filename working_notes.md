@@ -38,3 +38,9 @@ I have this working on CIL00029 Hp Elitebook laptop running win10. I have attemp
 
 info on win32com.client excel connection
 https://pbpython.com/windows-com.html
+
+permisions in windows
+need to share conda env
+by editing C:\Users\l.forde\.condarc
+
+just do individual miniconda installs

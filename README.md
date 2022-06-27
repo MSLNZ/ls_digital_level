@@ -2,14 +2,30 @@
 
 Read a Leica LS15 digital level via bluetooth and enter in an excel spreadsheet
 
-Requires Python (3.6, 3.7 work, others might) install with dependencies
-*  pyserial (pip install pyserial)
-*  pywin32 (pip install pywin32)
-*  tkinter (pip install tk)
-*  threading (pip install threaded)
-*  queue  (pip install queuelib)
+Requires Python (3.10.5 works, others might) install with dependencies
+*  pyserial 
+*  pywin32 
+*  tkinter 
+*  queue  
 
-Works on win 7 Lenovo thinkpad, also got working on win 10 on HP Elitebook
+The dependencies are listed in requirements.txt (pip, conda) and pyproject.toml (poetry).
+
+Install from scratch  - this is minimal method - better practice would be to use git and a conda or poetry environment
+- install https://docs.conda.io/en/latest/miniconda.html
+- download the latest source code from https://github.com/MSLNZ/ls_digital_level/releases
+- unzip this somewhere useful say "C:\Users\Public"
+- open a Anaconda command prompt from windows Menu -> Anaconda  -> Anaconda Prompt(Miniconda3)
+- in command prompt 
+
+```
+cd C:\Users\Public\ls_digital_level-*
+conda install --file requirements.txt
+```
+
+create and run batch file...
+
+
+
 
 ## Initial Pairing
 
