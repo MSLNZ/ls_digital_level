@@ -15,6 +15,7 @@ Install from scratch  - this is minimal method - better practice would be to use
 Install git  
  - download from https://gitforwindows.org/ and run  
 In git bash terminal - open this from win menu -> Git -> Git Bash  
+ - `git clone https://github.com/MSLNZ/ls_digital_level.git`
  - `cd ls_digital_level`  
  - `conda install --file requirements.txt`  
 
