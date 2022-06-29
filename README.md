@@ -10,26 +10,19 @@ Requires Python (3.10.5 works, others might) install with dependencies
 
 The dependencies are listed in requirements.txt (pip, conda) and pyproject.toml (poetry).
 
-Install from scratch  - this is minimal method - better practice would be to use git and a conda or poetry environment
+Install from scratch  - this is minimal method - better practice would be to use  conda or poetry environment
 - install https://docs.conda.io/en/latest/miniconda.html
-- download the latest source code from https://github.com/MSLNZ/ls_digital_level/releases
-- unzip this somewhere useful say "C:\Users\Public"
-- open a Anaconda command prompt from windows Menu -> Anaconda  -> Anaconda Prompt(Miniconda3)
-- in command prompt 
+Install git
+ - download from https://gitforwindows.org/ and run
+In git bash terminal - open this from win menu -> Git -> Git Bash
+ - `cd ls_digital_level`
+ - `conda install --file requirements.txt`
 
-```
-cd C:\Users\Public\ls_digital_level-0.1.1
-conda install pip
-pip install -r requirements.txt
-```
+Double click on LS15.bat file, or copy file to desktop and run from there.
 
-create and run batch file with following lines
-```
-@echo on
-call %USERPROFILE%\Miniconda3\Scripts\activate.bat
-%USERPROFILE%\Miniconda3\python.exe "C:\Users\Public\ls_digital_level-0.1.1\LS15_bluetooth.py
-```
-
+to update to latest code 
+In git bash terminal 
+ - `git pull https://github.com/MSLNZ/ls_digital_level.git`
 
 
 ## Initial Pairing
