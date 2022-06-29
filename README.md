@@ -14,10 +14,11 @@ Install from scratch  - this is minimal method - better practice would be to use
 - install https://docs.conda.io/en/latest/miniconda.html  
 Install git  
  - download from https://gitforwindows.org/ and run  
-In git bash terminal - open this from win menu -> Git -> Git Bash  
+In Anaconda terminl - open this from win menu -> Anaconda3 -> Anaconda Prompt (Minconda3) 
+ - `cd "C:\Users\Public"`
  - `git clone https://github.com/MSLNZ/ls_digital_level.git`
- - `cd ls_digital_level`  
- - `conda install --file requirements.txt`  
+ - `cd "ls_digital_level"`  
+ - `conda install --file requirements.txt`  or if this doesn't work `conda install pyserial pywin32 tk queuelib`
 
 Double click on LS15.bat file, or copy file to desktop and run from there.
 
