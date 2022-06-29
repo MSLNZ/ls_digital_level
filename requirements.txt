@@ -1,4 +1,4 @@
 pyserial==3.5
-pywin32==304
+pywin32==302
 queuelib==1.6.2
 tk==0.1.0
