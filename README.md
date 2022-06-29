@@ -10,13 +10,13 @@ Requires Python (3.10.5 works, others might) install with dependencies
 
 The dependencies are listed in requirements.txt (pip, conda) and pyproject.toml (poetry).
 
-Install from scratch  - this is minimal method - better practice would be to use  conda or poetry environment
-- install https://docs.conda.io/en/latest/miniconda.html
-Install git
- - download from https://gitforwindows.org/ and run
-In git bash terminal - open this from win menu -> Git -> Git Bash
- - `cd ls_digital_level`
- - `conda install --file requirements.txt`
+Install from scratch  - this is minimal method - better practice would be to use  conda or poetry environment  
+- install https://docs.conda.io/en/latest/miniconda.html  
+Install git  
+ - download from https://gitforwindows.org/ and run  
+In git bash terminal - open this from win menu -> Git -> Git Bash  
+ - `cd ls_digital_level`  
+ - `conda install --file requirements.txt`  
 
 Double click on LS15.bat file, or copy file to desktop and run from there.
 
