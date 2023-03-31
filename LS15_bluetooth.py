@@ -169,7 +169,8 @@ class App(tk.Tk):
             offset_G = (1, 7)
 
         if self.data_excel.get() == "Height":
-            self.excel.ActiveCell.Value = self.height_var.get()
+            self.excel.ActiveCell.Value = self.datestamp
+            self.excel.ActiveCell.Value(*offset_B) = self.height_var.get()
             self.excel.ActiveCell.Offset(*offset_A).Select()
 
         if self.data_excel.get() == "Height, Distance, Bearing":
